@@ -12,7 +12,7 @@ public class DetectObjectHandler : MonoBehaviour
             RaycastHit hitObject;
             if(Physics.Raycast(ray, out hitObject))
             {
-                print(string.Format("You have clicked on {0}", hitObject));
+                print(string.Format("You have clicked on {0}", hitObject.transform.name));
             }
         }
     }
