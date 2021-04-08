@@ -16,3 +16,9 @@ public class NewExperimentScript : MonoBehaviour
         
     }
 }
+
+[CreateAssetMenu(fileName = "Obamna", menuName = "Create Obamna/Obamna")]
+public abstract class ObamnaReborn : ScriptableObject
+{
+    public string Text = "You have created a new Obamna";
+}
