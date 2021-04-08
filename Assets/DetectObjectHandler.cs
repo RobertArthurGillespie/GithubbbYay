@@ -8,6 +8,7 @@ public class DetectObjectHandler : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
+            print("Button clicked");
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitObject;
             if(Physics.Raycast(ray, out hitObject))
